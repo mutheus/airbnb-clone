@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+export const HeroWrapper = styled.section`
   padding: 1.625em 1.875em;
 `
 

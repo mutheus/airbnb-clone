@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.header`
+export const HeroWrapper = styled.header`
   padding: 1.375em 1.875em;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 `

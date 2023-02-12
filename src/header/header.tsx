@@ -4,12 +4,12 @@ import * as S from './styles'
 
 export const Header = () => {
   return (
-    <S.Container>
+    <S.HeroWrapper>
       <S.ContentWrapper>
         <S.LogoWrapper href='/' title='Airbnb'>
           <Logo />
         </S.LogoWrapper>
       </S.ContentWrapper>
-    </S.Container>
+    </S.HeroWrapper>
   )
 }
