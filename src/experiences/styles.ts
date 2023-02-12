@@ -28,13 +28,15 @@ export const Paragraph = styled.p`
 
 export const CarouselWrapper = styled.div`
   overflow: hidden;
+  margin-top: 3.125em;
 `
 
 export const CarouselContainer = styled.div`
   display: flex;
+  gap: 1.125em;
 `
 
 export const CarouselSlide = styled.div`
-  flex: 0 0 40%;
+  flex: 0 0 max-content;
   min-width: 0;
 `
