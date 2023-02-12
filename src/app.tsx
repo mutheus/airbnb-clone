@@ -1,3 +1,4 @@
+import { Experiences } from './experiences'
 import { Header } from './header'
 import { Hero } from './hero'
 
@@ -6,6 +7,7 @@ export function App () {
     <div>
       <Header />
       <Hero />
+      <Experiences />
     </div>
   )
 }
