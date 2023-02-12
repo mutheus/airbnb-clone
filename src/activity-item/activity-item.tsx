@@ -1,12 +1,20 @@
 import { ReactComponent as Star } from '@/assets/star.svg'
 import triathete from '@/assets/triathete.png'
+import { useState } from 'react'
 
 import * as S from './styles'
 
 export const ActivityItem = () => {
+  const [showLabel, setShowLabel] = useState(false)
+
   return (
-    <S.ActivityWrapper>
+    <S.ActivityWrapper
+      onMouseOver={() => setShowLabel(true)}
+      onMouseOut={() => setShowLabel(false)}
+    >
       <S.ImgWrapper>
+        <S.StatusLabel showLabel={showLabel}>Sold out</S.StatusLabel>
+
         <S.Image src={triathete} alt='Triathete' />
       </S.ImgWrapper>
 
