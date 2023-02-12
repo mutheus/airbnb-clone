@@ -1,10 +1,19 @@
 import { ReactComponent as Star } from '@/assets/star.svg'
 import triathete from '@/assets/triathete.png'
+import { ActivityType } from '@/slider'
 import { useState } from 'react'
 
 import * as S from './styles'
 
-export const ActivityItem = () => {
+export const ActivityItem = ({
+  image,
+  status,
+  rating,
+  reviewsCount,
+  country,
+  desc,
+  price,
+}: ActivityType) => {
   const [showLabel, setShowLabel] = useState(false)
 
   return (
@@ -13,17 +22,17 @@ export const ActivityItem = () => {
       onMouseOut={() => setShowLabel(false)}
     >
       <S.ImgWrapper>
-        <S.StatusLabel showLabel={showLabel}>Sold out</S.StatusLabel>
+        <S.StatusLabel showLabel={showLabel}>{status}</S.StatusLabel>
 
-        <S.Image src={triathete} alt='Triathete' />
+        <S.Image src={image} alt={desc} />
       </S.ImgWrapper>
 
       <S.InfoWrapper>
-        <S.Review><Star /> 5.0 <span>(6) • USA</span></S.Review>
+        <S.Review><Star /> {rating} <span>({reviewsCount}) • {country}</span></S.Review>
 
-        <S.Desc>Life lessons with Katie Zaferes</S.Desc>
+        <S.Desc>{desc}</S.Desc>
 
-        <S.Price><strong>From $136</strong> / person</S.Price>
+        <S.Price><strong>From ${price}</strong> / person</S.Price>
       </S.InfoWrapper>
     </S.ActivityWrapper>
   )
