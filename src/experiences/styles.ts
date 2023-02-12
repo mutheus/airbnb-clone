@@ -25,3 +25,16 @@ export const Paragraph = styled.p`
   line-height: 1.125em;
   max-width: 19em;
 `
+
+export const CarouselWrapper = styled.div`
+  overflow: hidden;
+`
+
+export const CarouselContainer = styled.div`
+  display: flex;
+`
+
+export const CarouselSlide = styled.div`
+  flex: 0 0 40%;
+  min-width: 0;
+`

@@ -41,6 +41,7 @@
     "vite-tsconfig-paths": "3.5.1"
   },
   "devDependencies": {
+    "embla-carousel-react": "^7.0.9",
     "plop": "^3.1.1"
   }
 }
