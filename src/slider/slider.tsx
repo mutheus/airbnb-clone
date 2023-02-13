@@ -25,7 +25,7 @@ export const Slider = ({ data, options }: SliderProps) => {
   return (
     <S.SliderWrapper ref={emblaRef}>
       <S.SliderContainer>
-        {data.map((item) => (
+        {data.map(item => (
           <S.SliderSlide key={item.id}>
             <ActivityItem {...item} />
           </S.SliderSlide>

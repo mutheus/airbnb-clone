@@ -2,10 +2,13 @@ import { Slider } from '@/slider'
 import triathete from '@/assets/triathete.png'
 import wedding from '@/assets/wedding.png'
 import mountainBike from '@/assets/mountain-bike.png'
+import useMediaQuery from '@/hooks/use-media-query'
 
 import * as S from './styles'
 
 export const Experiences = () => {
+  const isSliderActive = useMediaQuery('(min-width: 39.75em)')
+
   const data = [
     {
       id: 1,
@@ -51,6 +54,7 @@ export const Experiences = () => {
             dragFree: true,
             containScroll: 'trimSnaps',
             loop: false,
+            active: !isSliderActive,
           }}
           data={data}
         />

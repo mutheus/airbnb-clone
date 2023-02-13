@@ -1,5 +1,4 @@
 import { ReactComponent as Star } from '@/assets/star.svg'
-import triathete from '@/assets/triathete.png'
 import { ActivityType } from '@/slider'
 import { useState } from 'react'
 
